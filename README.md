@@ -11,7 +11,7 @@
 
 ### Technical Information:
 
-* Using the [Gumby Framework (http://gumbyframework.com/)] for design
+* Using the [Gumby Framework](http://gumbyframework.com/) for design
 * Learn SASS
 * ExpressJS middleware
 
