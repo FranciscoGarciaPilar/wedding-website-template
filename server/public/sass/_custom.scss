@@ -1,0 +1,78 @@
+// Your custom SCSS should be written here...
+
+.landing-push-down {
+  height: 200px;
+}
+
+body {
+  font-family: 'Lato', serif;
+  color: $primary-color;
+}
+
+h1, h2, h3 {
+  font-family: 'Alex Brush', serif;
+}
+
+.animate-show-hide.ng-hide-remove,
+.animate-show-hide.ng-hide-remove-active {
+  visibility: visible;
+  opacity: 1;
+  display: block !important;
+}
+
+.animate-show-hide.ng-hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animate-show-hide.ng-hide-add,
+.animate-show-hide.ng-hide-add-active {
+  opacity: 0;
+  display: block !important;
+}
+
+.animate-show-hide {
+  @include transition-property(opacity);
+  @include transition-duration(1s);
+  @include transition-timing-function(ease-in-out);
+}
+
+.brand {
+  margin-top: 16px;
+  a {
+    font-family: 'Alex Brush', serif;
+    font-size: 32px;
+    color: $white;
+  }
+}
+
+a {
+  @include transition-property(color);
+  @include transition-duration(.5s);
+  @include transition-timing-function(ease-in-out);
+}
+
+.show-phone {
+  display: none;
+  @include visible(all-phones);
+}
+
+.show-tablet {
+  display: none;
+  @include visible(tablet);
+}
+
+.hide-phone {
+  @include hidden(all-phones);
+}
+
+.hide-tablet {
+  @include hidden(tablet);
+}
+
+.navbar ul > li > a {
+  font-size:1.2em;
+  @include transition-property(background-color);
+  @include transition-duration(1s);
+  @include transition-timing-function(ease-in-out);
+}

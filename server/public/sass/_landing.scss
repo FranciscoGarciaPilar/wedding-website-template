@@ -1,0 +1,27 @@
+.announce {
+  min-height: 1.5em;
+  font-size: 1.5em;
+}
+
+.welcome {
+  visibility: hidden;
+  min-height: 1.5em;
+  @include translateX(-200px);
+  opacity: 0;
+  &.slide-in{
+    @include single-transition(all, 2s, ease, 0s);
+    @include translateX(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.enter {
+  visibility: hidden;
+  opacity: 0;
+  &.enter-show{
+    @include single-transition(all, 2s, ease, 0s);
+    opacity: 1;
+    visibility: visible;
+  }
+}

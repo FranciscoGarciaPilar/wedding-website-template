@@ -1,0 +1,31 @@
+{
+    "name": "wedding-website",
+    "version": "0.0.0",
+    "authors": [
+        "Sean Cady <sean.cady@ge.com>"
+    ],
+    "description": "Jill and Jack's Wedding Website",
+    "license": "private",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular-animate": "1.2.16",
+        "angular-route": "1.2.16",
+        "angular-cookies": "1.2.16",
+        "angular-sanitize": "1.2.16",
+        "angular": "1.2.16",
+        "requirejs": "2.1.9",
+        "requirejs-domready": "2.0.1",
+        "requirejs-text": "2.0.10",
+        "jquery": "2.1.x",
+        "font-awesome":"4.0.x",
+        "gumby":"2.6.x",
+        "modernizr":"2.7.x"
+    }
+}

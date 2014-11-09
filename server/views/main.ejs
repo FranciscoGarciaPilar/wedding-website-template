@@ -1,0 +1,65 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1">
+  <meta name="apple-mobile-web-app-capable" content="yes"/>
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+  <!-- For iPad with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<%= staticImgUrl %>/ios/leaf-152.png">
+  <!-- For iPhone with high-resolution Retina display running iOS ≥ 7: -->
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<%= staticImgUrl %>/ios/leaf-120.png">
+  <!-- For first- and second-generation iPad: -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%= staticImgUrl %>/ios/leaf-72.png">
+  <!-- For non-Retina iPhone, iPod Touch, and Android 2.1+ devices: -->
+  <link rel="apple-touch-icon-precomposed" href="<%= staticImgUrl %>/ios/leaf-57.png">
+  <!-- For other options -->
+  <link rel="icon" href="<%= staticImgUrl %>/ios/leaf-32.png" sizes="32x32">
+
+  <title>Jill and Jack's Wedding</title>
+  <link href="<%= staticCssUrl %>/main.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="navbar metro" id="navbar">
+  <div class="row">
+    <a class="toggle" href="#" data-gumby-navbar="navbar"><i class="icon-menu"></i></a>
+
+    <div class="four columns brand">
+      <a href="/home">
+        <div class="show-phone show-tablet">
+          J & J
+        </div>
+        <div class="hide-phone hide-tablet">
+          Jill & Jack
+        </div>
+      </a>
+    </div>
+    <ul data-gumby-navbar-menu="navbar">
+      <li><a href="/howwemet">How We Met</a></li>
+      <li><a href="/proposal">Proposal</a></li>
+      <li><a href="/weddingparty">Wedding Party</a></li>
+      <li><a href="/event">Event Details</a></li>
+    </ul>
+  </div>
+</div>
+<div class="view-container link-slideup">
+  <div data-ng-view class="view-animation">
+
+  </div>
+</div>
+<script>
+  site = {
+    url: {
+      base: "/",
+      js: "<%= staticJsUrl %>",
+      img: "<%= staticImgUrl %>",
+      bower: "<%= staticBowerUrl %>"
+    }
+  }
+</script>
+<script data-main="<%= staticJsUrl %>/main"
+        src="<%= staticBowerUrl %>/requirejs/require.js"></script>
+<% include partials/ga %>
+</body>
+</html>

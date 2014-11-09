@@ -18,8 +18,8 @@
 Need to install ruby and a few gems to get Gumby to compile
 
 ````
-sudo gem install sass
-sudo gem install compass
+sudo gem install sass -v 3.2.19
+sudo gem install compass -v 0.12.7
 sudo gem install modular-scale -v 1.0.6
 
 ````
