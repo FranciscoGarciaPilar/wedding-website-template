@@ -1,3 +1,21 @@
+.landing-body {
+  background-image: url('/img/carlayjavierwelcome.jpg');
+  background-color: $primary-color;
+  background-blend-mode: luminosity;
+  background-size: 100% auto;
+  background-position-y: -220px;
+}
+.announce, .welcome, .enter a{
+  color: white;
+  text-shadow: $secondary-color 2px 2px 8px;
+}
+.enter a{
+  @include single-transition(all, 2s, ease, 0s);
+  &:hover {
+    color: white;
+    text-shadow: $primary-color 2px 2px 8px;
+  }
+}
 .announce {
   min-height: 1.5em;
   font-size: 1.5em;

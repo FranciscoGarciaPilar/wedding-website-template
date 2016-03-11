@@ -6,7 +6,7 @@ define([
     angular.module('Landing', ['ngAnimate'])
         .controller('LandingCtrl', ['$scope' , function ($scope) {
             $scope.showMessage = false;
-            $scope.bigDay = new Date('2014-10-12T05:00:01.000Z');
+            $scope.bigDay = new Date('2016-12-17T05:00:01.000Z');
             $scope.daysToEvent = Math.floor(($scope.bigDay.getTime() - (new Date().getTime())) / (1000 * 60 * 60 * 24));
         }])
         .directive('countDown', [ '$timeout', function ($timeout) {

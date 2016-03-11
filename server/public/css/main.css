@@ -640,6 +640,7 @@ html, body { height: 100%; }
 /* Typography */
 h1, h2, h3, h4, h5, h6 { font-family: "Lato"; font-weight: 300; color: #472f92; text-rendering: optimizeLegibility; padding-top: 0.273em; line-height: 1.15538em; padding-bottom: 0.273em; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #472f92; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #7c52ff; }
 
 @media only screen and (max-width: 767px) { h1, h2, h3, h4, h5, h6 { word-wrap: break-word; } }
 h1 { font-size: 68px; font-size: 4.25rem; }
@@ -661,7 +662,9 @@ h6 { font-size: 16px; font-size: 1rem; }
   h2 { font-size: 36px; font-size: 2.25rem; } }
 .subhead { color: #777; font-weight: normal; margin-bottom: 20px; }
 
-/*=====================================================  Links & Paragraph styles  ======================================================*/
+/*=====================================================
+ Links & Paragraph styles
+ ======================================================*/
 p { font-family: "Lato"; font-weight: 400; font-size: 16px; font-size: 1rem; margin-bottom: 13px; line-height: 1.625em; }
 p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
@@ -670,14 +673,15 @@ a { color: #2e1e5e; text-decoration: none; outline: 0; line-height: inherit; }
 a:hover { color: #7c52ff; }
 
 /*=====================================================
- Lists  ======================================================*/
+ Lists
+ ======================================================*/
 ul, ol { margin-bottom: 0.273em; }
 
 ul { list-style: none outside; }
 
 ol { list-style: decimal; margin-left: 30px; }
 
-ul.square, ul.circle, ul.disc { margin-left: 25px; }
+ul.square, ul.circle, ul.disc, ul.blank { margin-left: 25px; }
 ul.square { list-style: square outside; }
 ul.circle { list-style: circle outside; }
 ul.disc { list-style: disc outside; }
@@ -731,8 +735,6 @@ abbr { text-transform: none; }
   @page { margin: 0.5cm; }
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; } }
-.row .pull_one.one.column:first-child, .row .pull_one.two.columns:first-child, .row .pull_one.three.columns:first-child, .row .pull_one.four.columns:first-child, .row .pull_one.five.columns:first-child, .row .pull_one.six.columns:first-child, .row .pull_one.seven.columns:first-child, .row .pull_one.eight.columns:first-child, .row .pull_one.nine.columns:first-child, .row .pull_one.ten.columns:first-child, .row .pull_two.one.column:first-child, .row .pull_two.two.columns:first-child, .row .pull_two.three.columns:first-child, .row .pull_two.four.columns:first-child, .row .pull_two.five.columns:first-child, .row .pull_two.six.columns:first-child, .row .pull_two.seven.columns:first-child, .row .pull_two.eight.columns:first-child, .row .pull_two.nine.columns:first-child, .row .pull_two.eleven.columns:first-child, .row .pull_three.one.column:first-child, .row .pull_three.two.columns:first-child, .row .pull_three.three.columns:first-child, .row .pull_three.four.columns:first-child, .row .pull_three.five.columns:first-child, .row .pull_three.six.columns:first-child, .row .pull_three.seven.columns:first-child, .row .pull_three.eight.columns:first-child, .row .pull_three.ten.columns:first-child, .row .pull_three.eleven.columns:first-child, .row .pull_four.one.column:first-child, .row .pull_four.two.columns:first-child, .row .pull_four.three.columns:first-child, .row .pull_four.four.columns:first-child, .row .pull_four.five.columns:first-child, .row .pull_four.six.columns:first-child, .row .pull_four.seven.columns:first-child, .row .pull_four.nine.columns:first-child, .row .pull_four.ten.columns:first-child, .row .pull_four.eleven.columns:first-child, .row .pull_five.one.column:first-child, .row .pull_five.two.columns:first-child, .row .pull_five.three.columns:first-child, .row .pull_five.four.columns:first-child, .row .pull_five.five.columns:first-child, .row .pull_five.six.columns:first-child, .row .pull_five.eight.columns:first-child, .row .pull_five.nine.columns:first-child, .row .pull_five.ten.columns:first-child, .row .pull_five.eleven.columns:first-child, .row .pull_six.one.column:first-child, .row .pull_six.two.columns:first-child, .row .pull_six.three.columns:first-child, .row .pull_six.four.columns:first-child, .row .pull_six.five.columns:first-child, .row .pull_six.seven.columns:first-child, .row .pull_six.eight.columns:first-child, .row .pull_six.nine.columns:first-child, .row .pull_six.ten.columns:first-child, .row .pull_six.eleven.columns:first-child, .row .pull_seven.one.column:first-child, .row .pull_seven.two.columns:first-child, .row .pull_seven.three.columns:first-child, .row .pull_seven.four.columns:first-child, .row .pull_seven.six.columns:first-child, .row .pull_seven.seven.columns:first-child, .row .pull_seven.eight.columns:first-child, .row .pull_seven.nine.columns:first-child, .row .pull_seven.ten.columns:first-child, .row .pull_seven.eleven.columns:first-child, .row .pull_eight.one.column:first-child, .row .pull_eight.two.columns:first-child, .row .pull_eight.three.columns:first-child, .row .pull_eight.five.columns:first-child, .row .pull_eight.six.columns:first-child, .row .pull_eight.seven.columns:first-child, .row .pull_eight.eight.columns:first-child, .row .pull_eight.nine.columns:first-child, .row .pull_eight.ten.columns:first-child, .row .pull_eight.eleven.columns:first-child, .row .pull_nine.one.column:first-child, .row .pull_nine.two.columns:first-child, .row .pull_nine.four.columns:first-child, .row .pull_nine.five.columns:first-child, .row .pull_nine.six.columns:first-child, .row .pull_nine.seven.columns:first-child, .row .pull_nine.eight.columns:first-child, .row .pull_nine.nine.columns:first-child, .row .pull_nine.ten.columns:first-child, .row .pull_nine.eleven.columns:first-child, .row .pull_ten.one.column:first-child, .row .pull_ten.three.columns:first-child, .row .pull_ten.four.columns:first-child, .row .pull_ten.five.columns:first-child, .row .pull_ten.six.columns:first-child, .row .pull_ten.seven.columns:first-child, .row .pull_ten.eight.columns:first-child, .row .pull_ten.nine.columns:first-child, .row .pull_ten.ten.columns:first-child, .row .pull_ten.eleven.columns:first-child, .row .pull_eleven.two.columns:first-child, .row .pull_eleven.three.columns:first-child, .row .pull_eleven.four.columns:first-child, .row .pull_eleven.five.columns:first-child, .row .pull_eleven.six.columns:first-child, .row .pull_eleven.seven.columns:first-child, .row .pull_eleven.eight.columns:first-child, .row .pull_eleven.nine.columns:first-child, .row .pull_eleven.ten.columns:first-child, .row .pull_eleven.eleven.columns:first-child, .sixteen.colgrid .row .pull_one.one.column:first-child, .sixteen.colgrid .row .pull_one.two.columns:first-child, .sixteen.colgrid .row .pull_one.three.columns:first-child, .sixteen.colgrid .row .pull_one.four.columns:first-child, .sixteen.colgrid .row .pull_one.five.columns:first-child, .sixteen.colgrid .row .pull_one.six.columns:first-child, .sixteen.colgrid .row .pull_one.seven.columns:first-child, .sixteen.colgrid .row .pull_one.eight.columns:first-child, .sixteen.colgrid .row .pull_one.nine.columns:first-child, .sixteen.colgrid .row .pull_one.ten.columns:first-child, .sixteen.colgrid .row .pull_one.eleven.columns:first-child, .sixteen.colgrid .row .pull_one.twelve.columns:first-child, .sixteen.colgrid .row .pull_one.thirteen.columns:first-child, .sixteen.colgrid .row .pull_one.fourteen.columns:first-child, .sixteen.colgrid .row .pull_two.one.column:first-child, .sixteen.colgrid .row .pull_two.two.columns:first-child, .sixteen.colgrid .row .pull_two.three.columns:first-child, .sixteen.colgrid .row .pull_two.four.columns:first-child, .sixteen.colgrid .row .pull_two.five.columns:first-child, .sixteen.colgrid .row .pull_two.six.columns:first-child, .sixteen.colgrid .row .pull_two.seven.columns:first-child, .sixteen.colgrid .row .pull_two.eight.columns:first-child, .sixteen.colgrid .row .pull_two.nine.columns:first-child, .sixteen.colgrid .row .pull_two.ten.columns:first-child, .sixteen.colgrid .row .pull_two.eleven.columns:first-child, .sixteen.colgrid .row .pull_two.twelve.columns:first-child, .sixteen.colgrid .row .pull_two.thirteen.columns:first-child, .sixteen.colgrid .row .pull_two.fifteen.columns:first-child, .sixteen.colgrid .row .pull_three.one.column:first-child, .sixteen.colgrid .row .pull_three.two.columns:first-child, .sixteen.colgrid .row .pull_three.three.columns:first-child, .sixteen.colgrid .row .pull_three.four.columns:first-child, .sixteen.colgrid .row .pull_three.five.columns:first-child, .sixteen.colgrid .row .pull_three.six.columns:first-child, .sixteen.colgrid .row .pull_three.seven.columns:first-child, .sixteen.colgrid .row .pull_three.eight.columns:first-child, .sixteen.colgrid .row .pull_three.nine.columns:first-child, .sixteen.colgrid .row .pull_three.ten.columns:first-child, .sixteen.colgrid .row .pull_three.eleven.columns:first-child, .sixteen.colgrid .row .pull_three.twelve.columns:first-child, .sixteen.colgrid .row .pull_three.fourteen.columns:first-child, .sixteen.colgrid .row .pull_three.fifteen.columns:first-child, .sixteen.colgrid .row .pull_four.one.column:first-child, .sixteen.colgrid .row .pull_four.two.columns:first-child, .sixteen.colgrid .row .pull_four.three.columns:first-child, .sixteen.colgrid .row .pull_four.four.columns:first-child, .sixteen.colgrid .row .pull_four.five.columns:first-child, .sixteen.colgrid .row .pull_four.six.columns:first-child, .sixteen.colgrid .row .pull_four.seven.columns:first-child, .sixteen.colgrid .row .pull_four.eight.columns:first-child, .sixteen.colgrid .row .pull_four.nine.columns:first-child, .sixteen.colgrid .row .pull_four.ten.columns:first-child, .sixteen.colgrid .row .pull_four.eleven.columns:first-child, .sixteen.colgrid .row .pull_four.thirteen.columns:first-child, .sixteen.colgrid .row .pull_four.fourteen.columns:first-child, .sixteen.colgrid .row .pull_four.fifteen.columns:first-child, .sixteen.colgrid .row .pull_five.one.column:first-child, .sixteen.colgrid .row .pull_five.two.columns:first-child, .sixteen.colgrid .row .pull_five.three.columns:first-child, .sixteen.colgrid .row .pull_five.four.columns:first-child, .sixteen.colgrid .row .pull_five.five.columns:first-child, .sixteen.colgrid .row .pull_five.six.columns:first-child, .sixteen.colgrid .row .pull_five.seven.columns:first-child, .sixteen.colgrid .row .pull_five.eight.columns:first-child, .sixteen.colgrid .row .pull_five.nine.columns:first-child, .sixteen.colgrid .row .pull_five.ten.columns:first-child, .sixteen.colgrid .row .pull_five.twelve.columns:first-child, .sixteen.colgrid .row .pull_five.thirteen.columns:first-child, .sixteen.colgrid .row .pull_five.fourteen.columns:first-child, .sixteen.colgrid .row .pull_five.fifteen.columns:first-child, .sixteen.colgrid .row .pull_six.one.column:first-child, .sixteen.colgrid .row .pull_six.two.columns:first-child, .sixteen.colgrid .row .pull_six.three.columns:first-child, .sixteen.colgrid .row .pull_six.four.columns:first-child, .sixteen.colgrid .row .pull_six.five.columns:first-child, .sixteen.colgrid .row .pull_six.six.columns:first-child, .sixteen.colgrid .row .pull_six.seven.columns:first-child, .sixteen.colgrid .row .pull_six.eight.columns:first-child, .sixteen.colgrid .row .pull_six.nine.columns:first-child, .sixteen.colgrid .row .pull_six.eleven.columns:first-child, .sixteen.colgrid .row .pull_six.twelve.columns:first-child, .sixteen.colgrid .row .pull_six.thirteen.columns:first-child, .sixteen.colgrid .row .pull_six.fourteen.columns:first-child, .sixteen.colgrid .row .pull_six.fifteen.columns:first-child, .sixteen.colgrid .row .pull_seven.one.column:first-child, .sixteen.colgrid .row .pull_seven.two.columns:first-child, .sixteen.colgrid .row .pull_seven.three.columns:first-child, .sixteen.colgrid .row .pull_seven.four.columns:first-child, .sixteen.colgrid .row .pull_seven.five.columns:first-child, .sixteen.colgrid .row .pull_seven.six.columns:first-child, .sixteen.colgrid .row .pull_seven.seven.columns:first-child, .sixteen.colgrid .row .pull_seven.eight.columns:first-child, .sixteen.colgrid .row .pull_seven.ten.columns:first-child, .sixteen.colgrid .row .pull_seven.eleven.columns:first-child, .sixteen.colgrid .row .pull_seven.twelve.columns:first-child, .sixteen.colgrid .row .pull_seven.thirteen.columns:first-child, .sixteen.colgrid .row .pull_seven.fourteen.columns:first-child, .sixteen.colgrid .row .pull_seven.fifteen.columns:first-child, .sixteen.colgrid .row .pull_eight.one.column:first-child, .sixteen.colgrid .row .pull_eight.two.columns:first-child, .sixteen.colgrid .row .pull_eight.three.columns:first-child, .sixteen.colgrid .row .pull_eight.four.columns:first-child, .sixteen.colgrid .row .pull_eight.five.columns:first-child, .sixteen.colgrid .row .pull_eight.six.columns:first-child, .sixteen.colgrid .row .pull_eight.seven.columns:first-child, .sixteen.colgrid .row .pull_eight.nine.columns:first-child, .sixteen.colgrid .row .pull_eight.ten.columns:first-child, .sixteen.colgrid .row .pull_eight.eleven.columns:first-child, .sixteen.colgrid .row .pull_eight.twelve.columns:first-child, .sixteen.colgrid .row .pull_eight.thirteen.columns:first-child, .sixteen.colgrid .row .pull_eight.fourteen.columns:first-child, .sixteen.colgrid .row .pull_eight.fifteen.columns:first-child, .sixteen.colgrid .row .pull_nine.one.column:first-child, .sixteen.colgrid .row .pull_nine.two.columns:first-child, .sixteen.colgrid .row .pull_nine.three.columns:first-child, .sixteen.colgrid .row .pull_nine.four.columns:first-child, .sixteen.colgrid .row .pull_nine.five.columns:first-child, .sixteen.colgrid .row .pull_nine.six.columns:first-child, .sixteen.colgrid .row .pull_nine.eight.columns:first-child, .sixteen.colgrid .row .pull_nine.nine.columns:first-child, .sixteen.colgrid .row .pull_nine.ten.columns:first-child, .sixteen.colgrid .row .pull_nine.eleven.columns:first-child, .sixteen.colgrid .row .pull_nine.twelve.columns:first-child, .sixteen.colgrid .row .pull_nine.thirteen.columns:first-child, .sixteen.colgrid .row .pull_nine.fourteen.columns:first-child, .sixteen.colgrid .row .pull_nine.fifteen.columns:first-child, .sixteen.colgrid .row .pull_ten.one.column:first-child, .sixteen.colgrid .row .pull_ten.two.columns:first-child, .sixteen.colgrid .row .pull_ten.three.columns:first-child, .sixteen.colgrid .row .pull_ten.four.columns:first-child, .sixteen.colgrid .row .pull_ten.five.columns:first-child, .sixteen.colgrid .row .pull_ten.seven.columns:first-child, .sixteen.colgrid .row .pull_ten.eight.columns:first-child, .sixteen.colgrid .row .pull_ten.nine.columns:first-child, .sixteen.colgrid .row .pull_ten.ten.columns:first-child, .sixteen.colgrid .row .pull_ten.eleven.columns:first-child, .sixteen.colgrid .row .pull_ten.twelve.columns:first-child, .sixteen.colgrid .row .pull_ten.thirteen.columns:first-child, .sixteen.colgrid .row .pull_ten.fourteen.columns:first-child, .sixteen.colgrid .row .pull_ten.fifteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.one.column:first-child, .sixteen.colgrid .row .pull_eleven.two.columns:first-child, .sixteen.colgrid .row .pull_eleven.three.columns:first-child, .sixteen.colgrid .row .pull_eleven.four.columns:first-child, .sixteen.colgrid .row .pull_eleven.six.columns:first-child, .sixteen.colgrid .row .pull_eleven.seven.columns:first-child, .sixteen.colgrid .row .pull_eleven.eight.columns:first-child, .sixteen.colgrid .row .pull_eleven.nine.columns:first-child, .sixteen.colgrid .row .pull_eleven.ten.columns:first-child, .sixteen.colgrid .row .pull_eleven.eleven.columns:first-child, .sixteen.colgrid .row .pull_eleven.twelve.columns:first-child, .sixteen.colgrid .row .pull_eleven.thirteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.fourteen.columns:first-child, .sixteen.colgrid .row .pull_eleven.fifteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.one.column:first-child, .sixteen.colgrid .row .pull_twelve.two.columns:first-child, .sixteen.colgrid .row .pull_twelve.three.columns:first-child, .sixteen.colgrid .row .pull_twelve.five.columns:first-child, .sixteen.colgrid .row .pull_twelve.six.columns:first-child, .sixteen.colgrid .row .pull_twelve.seven.columns:first-child, .sixteen.colgrid .row .pull_twelve.eight.columns:first-child, .sixteen.colgrid .row .pull_twelve.nine.columns:first-child, .sixteen.colgrid .row .pull_twelve.ten.columns:first-child, .sixteen.colgrid .row .pull_twelve.eleven.columns:first-child, .sixteen.colgrid .row .pull_twelve.twelve.columns:first-child, .sixteen.colgrid .row .pull_twelve.thirteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.fourteen.columns:first-child, .sixteen.colgrid .row .pull_twelve.fifteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.one.column:first-child, .sixteen.colgrid .row .pull_thirteen.two.columns:first-child, .sixteen.colgrid .row .pull_thirteen.four.columns:first-child, .sixteen.colgrid .row .pull_thirteen.five.columns:first-child, .sixteen.colgrid .row .pull_thirteen.six.columns:first-child, .sixteen.colgrid .row .pull_thirteen.seven.columns:first-child, .sixteen.colgrid .row .pull_thirteen.eight.columns:first-child, .sixteen.colgrid .row .pull_thirteen.nine.columns:first-child, .sixteen.colgrid .row .pull_thirteen.ten.columns:first-child, .sixteen.colgrid .row .pull_thirteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_thirteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_thirteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_thirteen.fifteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.one.column:first-child, .sixteen.colgrid .row .pull_fourteen.three.columns:first-child, .sixteen.colgrid .row .pull_fourteen.four.columns:first-child, .sixteen.colgrid .row .pull_fourteen.five.columns:first-child, .sixteen.colgrid .row .pull_fourteen.six.columns:first-child, .sixteen.colgrid .row .pull_fourteen.seven.columns:first-child, .sixteen.colgrid .row .pull_fourteen.eight.columns:first-child, .sixteen.colgrid .row .pull_fourteen.nine.columns:first-child, .sixteen.colgrid .row .pull_fourteen.ten.columns:first-child, .sixteen.colgrid .row .pull_fourteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_fourteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_fourteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_fourteen.fifteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.two.columns:first-child, .sixteen.colgrid .row .pull_fifteen.three.columns:first-child, .sixteen.colgrid .row .pull_fifteen.four.columns:first-child, .sixteen.colgrid .row .pull_fifteen.five.columns:first-child, .sixteen.colgrid .row .pull_fifteen.six.columns:first-child, .sixteen.colgrid .row .pull_fifteen.seven.columns:first-child, .sixteen.colgrid .row .pull_fifteen.eight.columns:first-child, .sixteen.colgrid .row .pull_fifteen.nine.columns:first-child, .sixteen.colgrid .row .pull_fifteen.ten.columns:first-child, .sixteen.colgrid .row .pull_fifteen.eleven.columns:first-child, .sixteen.colgrid .row .pull_fifteen.twelve.columns:first-child, .sixteen.colgrid .row .pull_fifteen.thirteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.fourteen.columns:first-child, .sixteen.colgrid .row .pull_fifteen.fifteen.columns:first-child { margin-left: 0; }
-
 /*=================================================
 
 	+++ LE GRID +++
@@ -1248,8 +1250,8 @@ img { -ms-interpolation-mode: bicubic; }
   .navbar a.toggle:hover { background: #5035a5; }
   .navbar a.toggle:active, .navbar a.toggle.active { background: #3e297f; } }
 
-.navbar .logo { display: inline-block; margin: 0 2.12766% 0 0; padding: 0; height: 60px; line-height: 58px; }
-.navbar .logo a { display: block; padding: 0; overflow: hidden; height: 60px; line-height: 58px; }
+.navbar .logo { display: inline-block; margin: 0 2.12766% 0 0; padding: 0; height: 32px; line-height: 30px; }
+.navbar .logo a { display: block; padding: 0; overflow: hidden; height: 32px; line-height: 30px; }
 .navbar .logo a img { max-height: 95%; }
 @media only screen and (max-width: 767px) { .navbar .logo { float: left; display: inline; }
   .navbar .logo a { padding: 0; }
@@ -1258,9 +1260,9 @@ img { -ms-interpolation-mode: bicubic; }
 .navbar ul { display: table; vertical-align: middle; margin: 0; float: none; }
 @media only screen and (max-width: 767px) { .navbar ul { position: absolute; display: block; width: 100% !important; height: 0; max-height: 0; top: 60px; left: 0; overflow: hidden; text-align: center; background: #3e297f; }
   .navbar ul.active { height: auto; max-height: 600px; z-index: 999998; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; -webkit-box-shadow: 0 2px 2px #2b1c58; -moz-box-shadow: 0 2px 2px #2b1c58; box-shadow: 0 2px 2px #2b1c58; } }
-.navbar ul li { display: table-cell; text-align: center; padding-bottom: 0; margin: 0; height: 60px; line-height: 58px; }
+.navbar ul li { display: table-cell; text-align: center; padding-bottom: 0; margin: 0; height: 32px; line-height: 30px; }
 @media only screen and (max-width: 767px) { .navbar ul li { display: block; position: relative; min-height: 50px; max-height: 320px; height: auto; width: 100%; border-right: 0 !important; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; -webkit-transition-duration: 0.5s; -moz-transition-duration: 0.5s; -o-transition-duration: 0.5s; transition-duration: 0.5s; } }
-.navbar ul li > a { display: block; padding: 0 16px; white-space: nowrap; color: white; text-shadow: 0 1px 2px #211645, 0 1px 0 #211645; height: 60px; line-height: 58px; font-size: 16px; font-size: 1rem; }
+.navbar ul li > a { display: block; padding: 0 16px; white-space: nowrap; color: white; text-shadow: 0 1px 2px #211645, 0 1px 0 #211645; height: 32px; line-height: 30px; font-size: 16px; font-size: 1rem; }
 .navbar ul li > a i.icon-popup { position: absolute; }
 .navbar ul li .btn { border-color: #0f0a1e !important; }
 .navbar ul li.field { margin-bottom: 0 !important; margin-right: 0; }
@@ -1299,9 +1301,9 @@ img { -ms-interpolation-mode: bicubic; }
   .navbar li .dropdown.active .dropdown ul li a:hover { color: #2e1e5e; } }
 
 .navbar li .dropdown ul { margin: 0; display: block; }
-.navbar li .dropdown ul > li { position: relative; display: block; width: 100%; float: left; text-align: left; height: auto; -webkit-border-radius: none; -moz-border-radius: none; -ms-border-radius: none; -o-border-radius: none; border-radius: none; }
+.navbar li .dropdown ul > li { position: relative; display: block; width: 100%; float: left; text-align: left; height: auto; -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 @media only screen and (min-width: 768px) and (max-width: 939px) { .navbar li .dropdown ul > li { max-width: 320px; word-wrap: break-word; } }
-.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #2e1e5e; border-bottom: 1px solid #cccccc; text-shadow: none; height: 51px; line-height: 49px; }
+.navbar li .dropdown ul > li a { display: block; padding: 0 20px; color: #2e1e5e; border-bottom: 1px solid #cccccc; text-shadow: none; height: 28px; line-height: 26px; }
 @media only screen and (max-width: 767px) { .navbar li .dropdown ul > li a { padding: 0 20px; } }
 .navbar li .dropdown ul > li .dropdown { display: none; background: white; }
 .navbar li .dropdown ul li:first-child a { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
@@ -1336,42 +1338,42 @@ img { -ms-interpolation-mode: bicubic; }
 .btn > a, .btn input, .btn button, .skiplink > a, .skiplink input, .skiplink button { display: block; padding: 0 18px; color: white; height: 100%; }
 .btn input, .btn button, .skiplink input, .skiplink button { background: none; border: none; width: 100%; font-size: 100%; cursor: pointer; font-weight: 400; -webkit-appearance: none; -moz-appearance: none; appearance: none; }
 
-.btn.xlarge, .skiplink.xlarge { font-size: 30px; font-size: 1.875rem; height: 66px; line-height: 64px; }
+.btn.xlarge, .skiplink.xlarge { font-size: 30px; font-size: 1.875rem; height: 36px; line-height: 34px; }
 .btn.xlarge a, .skiplink.xlarge a { position: relative; padding: 0 30px; }
-.btn.xlarge.icon-left a, .skiplink.xlarge.icon-left a { padding-left: 66px; }
+.btn.xlarge.icon-left a, .skiplink.xlarge.icon-left a { padding-left: 36px; }
 .btn.xlarge.icon-left a:before, .skiplink.xlarge.icon-left a:before { left: 20px; }
-.btn.xlarge.icon-right a, .skiplink.xlarge.icon-right a { padding-right: 66px; }
+.btn.xlarge.icon-right a, .skiplink.xlarge.icon-right a { padding-right: 36px; }
 .btn.xlarge.icon-right a:after, .skiplink.xlarge.icon-right a:after { right: 20px; }
-.btn.large, .skiplink.large { font-size: 26px; font-size: 1.625rem; height: 58px; line-height: 56px; }
+.btn.large, .skiplink.large { font-size: 26px; font-size: 1.625rem; height: 31px; line-height: 29px; }
 .btn.large a, .skiplink.large a { position: relative; padding: 0 26px; }
-.btn.large.icon-left a, .skiplink.large.icon-left a { padding-left: 58px; }
+.btn.large.icon-left a, .skiplink.large.icon-left a { padding-left: 31px; }
 .btn.large.icon-left a:before, .skiplink.large.icon-left a:before { left: 17.33333px; }
-.btn.large.icon-right a, .skiplink.large.icon-right a { padding-right: 58px; }
+.btn.large.icon-right a, .skiplink.large.icon-right a { padding-right: 31px; }
 .btn.large.icon-right a:after, .skiplink.large.icon-right a:after { right: 17.33333px; }
-.btn.medium, .skiplink.medium { font-size: 16px; font-size: 1rem; height: 36px; line-height: 34px; }
+.btn.medium, .skiplink.medium { font-size: 16px; font-size: 1rem; height: 20px; line-height: 18px; }
 .btn.medium a, .skiplink.medium a { position: relative; padding: 0 16px; }
-.btn.medium.icon-left a, .skiplink.medium.icon-left a { padding-left: 36px; }
+.btn.medium.icon-left a, .skiplink.medium.icon-left a { padding-left: 20px; }
 .btn.medium.icon-left a:before, .skiplink.medium.icon-left a:before { left: 10.66667px; }
-.btn.medium.icon-right a, .skiplink.medium.icon-right a { padding-right: 36px; }
+.btn.medium.icon-right a, .skiplink.medium.icon-right a { padding-right: 20px; }
 .btn.medium.icon-right a:after, .skiplink.medium.icon-right a:after { right: 10.66667px; }
 .btn.medium a, .skiplink.medium a { padding: 0 18px; }
-.btn.small, .skiplink.small { font-size: 10px; font-size: 0.625rem; height: 23px; line-height: 21px; }
+.btn.small, .skiplink.small { font-size: 10px; font-size: 0.625rem; height: 13px; line-height: 11px; }
 .btn.small a, .skiplink.small a { position: relative; padding: 0 10px; }
-.btn.small.icon-left a, .skiplink.small.icon-left a { padding-left: 23px; }
+.btn.small.icon-left a, .skiplink.small.icon-left a { padding-left: 13px; }
 .btn.small.icon-left a:before, .skiplink.small.icon-left a:before { left: 6.66667px; }
-.btn.small.icon-right a, .skiplink.small.icon-right a { padding-right: 23px; }
+.btn.small.icon-right a, .skiplink.small.icon-right a { padding-right: 13px; }
 .btn.small.icon-right a:after, .skiplink.small.icon-right a:after { right: 6.66667px; }
 .btn.small a, .skiplink.small a { padding: 0 10px; }
 .btn.oval, .skiplink.oval { -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; }
 .btn.pill-left, .skiplink.pill-left { -webkit-border-radius: 500px 0 0 500px; -moz-border-radius: 500px 0 0 500px; -ms-border-radius: 500px 0 0 500px; -o-border-radius: 500px 0 0 500px; border-radius: 500px 0 0 500px; }
 .btn.pill-right, .skiplink.pill-right { -webkit-border-radius: 0 500px 500px 0; -moz-border-radius: 0 500px 500px 0; -ms-border-radius: 0 500px 500px 0; -o-border-radius: 0 500px 500px 0; border-radius: 0 500px 500px 0; }
 
-.btn.primary, .skiplink.primary { background: #472f92; border: 1px solid #472f92; }
-.btn.primary:hover, .skiplink.primary:hover { background: #5a3bb9; }
-.btn.primary:active, .skiplink.primary:active { background: #34236b; }
-.btn.secondary, .skiplink.secondary { background: #42a35a; border: 1px solid #42a35a; }
-.btn.secondary:hover, .skiplink.secondary:hover { background: #5bbd73; }
-.btn.secondary:active, .skiplink.secondary:active { background: #337f46; }
+.btn.primary, .skiplink.primary { background: #00558b; border: 1px solid #00558b; }
+.btn.primary:hover, .skiplink.primary:hover { background: #0074be; }
+.btn.primary:active, .skiplink.primary:active { background: #003658; }
+.btn.secondary, .skiplink.secondary { background: #ffcc00; border: 1px solid #ffcc00; }
+.btn.secondary:hover, .skiplink.secondary:hover { background: #ffd633; }
+.btn.secondary:active, .skiplink.secondary:active { background: #cca300; }
 .btn.default, .skiplink.default { background: #f2f2f2; border: 1px solid #f2f2f2; color: #555555; border: 1px solid #f2f2f2; }
 .btn.default:hover, .skiplink.default:hover { background: white; }
 .btn.default:active, .skiplink.default:active { background: #d8d8d8; }
@@ -1395,14 +1397,14 @@ img { -ms-interpolation-mode: bicubic; }
 
 .btn.pretty, .pretty .btn, .pretty .skiplink, .skiplink.pretty, .btn.metro.rounded, .metro .rounded.btn, .metro .rounded.skiplink, .metro .btn.rounded { -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
 
-.btn.pretty.primary, .pretty .primary.btn, .pretty .primary.skiplink, .skiplink.pretty.primary { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #775ccb), color-stop(100%, #452a97)); background-image: -webkit-linear-gradient(#775ccb, #452a97); background-image: -moz-linear-gradient(#775ccb, #452a97); background-image: -o-linear-gradient(#775ccb, #452a97); background-image: linear-gradient(#775ccb, #452a97); -webkit-box-shadow: inset 0 0 3px #c8bdea; -moz-box-shadow: inset 0 0 3px #c8bdea; box-shadow: inset 0 0 3px #c8bdea; border: 1px solid #2b1c58; }
+.btn.pretty.primary, .pretty .primary.btn, .pretty .primary.skiplink, .skiplink.pretty.primary { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0093f1), color-stop(100%, #00558b)); background-image: -webkit-linear-gradient(#0093f1, #00558b); background-image: -moz-linear-gradient(#0093f1, #00558b); background-image: -o-linear-gradient(#0093f1, #00558b); background-image: linear-gradient(#0093f1, #00558b); -webkit-box-shadow: inset 0 0 3px #72c8ff; -moz-box-shadow: inset 0 0 3px #72c8ff; box-shadow: inset 0 0 3px #72c8ff; border: 1px solid #00263f; }
 .btn.pretty.primary:hover, .pretty .primary.btn:hover, .pretty .primary.skiplink:hover, .skiplink.pretty.primary:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a2d4fc), color-stop(100%, #54b2fe)); background-image: -webkit-linear-gradient(#a2d4fc, #54b2fe); background-image: -moz-linear-gradient(#a2d4fc, #54b2fe); background-image: -o-linear-gradient(#a2d4fc, #54b2fe); background-image: linear-gradient(#a2d4fc, #54b2fe); -webkit-box-shadow: inset 0 0 3px white; -moz-box-shadow: inset 0 0 3px white; box-shadow: inset 0 0 3px white; border: 1px solid #0e90f8; }
-.btn.pretty.primary:active, .pretty .primary.btn:active, .pretty .primary.skiplink:active, .skiplink.pretty.primary:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #452a97), color-stop(100%, #775ccb)); background-image: -webkit-linear-gradient(#452a97, #775ccb); background-image: -moz-linear-gradient(#452a97, #775ccb); background-image: -o-linear-gradient(#452a97, #775ccb); background-image: linear-gradient(#452a97, #775ccb); -webkit-box-shadow: inset 0 0 3px #d8d0f0; -moz-box-shadow: inset 0 0 3px #d8d0f0; box-shadow: inset 0 0 3px #d8d0f0; }
-.btn.pretty.primary a, .pretty .primary.btn a, .pretty .primary.skiplink a, .btn.pretty.primary input, .pretty .primary.btn input, .pretty .primary.skiplink input, .btn.pretty.primary button, .pretty .primary.btn button, .pretty .primary.skiplink button, .skiplink.pretty.primary a, .skiplink.pretty.primary input, .skiplink.pretty.primary button { text-shadow: 0 1px 1px #211645; }
-.btn.pretty.secondary, .pretty .secondary.btn, .pretty .secondary.skiplink, .skiplink.pretty.secondary { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #80cb92), color-stop(100%, #3ca957)); background-image: -webkit-linear-gradient(#80cb92, #3ca957); background-image: -moz-linear-gradient(#80cb92, #3ca957); background-image: -o-linear-gradient(#80cb92, #3ca957); background-image: linear-gradient(#80cb92, #3ca957); -webkit-box-shadow: inset 0 0 3px #daf0e0; -moz-box-shadow: inset 0 0 3px #daf0e0; box-shadow: inset 0 0 3px #daf0e0; border: 1px solid #2c6d3c; }
+.btn.pretty.primary:active, .pretty .primary.btn:active, .pretty .primary.skiplink:active, .skiplink.pretty.primary:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #00558b), color-stop(100%, #0093f1)); background-image: -webkit-linear-gradient(#00558b, #0093f1); background-image: -moz-linear-gradient(#00558b, #0093f1); background-image: -o-linear-gradient(#00558b, #0093f1); background-image: linear-gradient(#00558b, #0093f1); -webkit-box-shadow: inset 0 0 3px #8bd2ff; -moz-box-shadow: inset 0 0 3px #8bd2ff; box-shadow: inset 0 0 3px #8bd2ff; }
+.btn.pretty.primary a, .pretty .primary.btn a, .pretty .primary.skiplink a, .btn.pretty.primary input, .pretty .primary.btn input, .pretty .primary.skiplink input, .btn.pretty.primary button, .pretty .primary.btn button, .pretty .primary.skiplink button, .skiplink.pretty.primary a, .skiplink.pretty.primary input, .skiplink.pretty.primary button { text-shadow: 0 1px 1px #001725; }
+.btn.pretty.secondary, .pretty .secondary.btn, .pretty .secondary.skiplink, .skiplink.pretty.secondary { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe066), color-stop(100%, #ffcc00)); background-image: -webkit-linear-gradient(#ffe066, #ffcc00); background-image: -moz-linear-gradient(#ffe066, #ffcc00); background-image: -o-linear-gradient(#ffe066, #ffcc00); background-image: linear-gradient(#ffe066, #ffcc00); -webkit-box-shadow: inset 0 0 3px #fffae5; -moz-box-shadow: inset 0 0 3px #fffae5; box-shadow: inset 0 0 3px #fffae5; border: 1px solid #b38f00; }
 .btn.pretty.secondary:hover, .pretty .secondary.btn:hover, .pretty .secondary.skiplink:hover, .skiplink.pretty.secondary:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #a1d3ad), color-stop(100%, #68c07d)); background-image: -webkit-linear-gradient(#a1d3ad, #68c07d); background-image: -moz-linear-gradient(#a1d3ad, #68c07d); background-image: -o-linear-gradient(#a1d3ad, #68c07d); background-image: linear-gradient(#a1d3ad, #68c07d); -webkit-box-shadow: inset 0 0 3px #f8fcf9; -moz-box-shadow: inset 0 0 3px #f8fcf9; box-shadow: inset 0 0 3px #f8fcf9; border: 1px solid #469659; }
-.btn.pretty.secondary:active, .pretty .secondary.btn:active, .pretty .secondary.skiplink:active, .skiplink.pretty.secondary:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3ca957), color-stop(100%, #80cb92)); background-image: -webkit-linear-gradient(#3ca957, #80cb92); background-image: -moz-linear-gradient(#3ca957, #80cb92); background-image: -o-linear-gradient(#3ca957, #80cb92); background-image: linear-gradient(#3ca957, #80cb92); -webkit-box-shadow: inset 0 0 3px #ecf8ef; -moz-box-shadow: inset 0 0 3px #ecf8ef; box-shadow: inset 0 0 3px #ecf8ef; }
-.btn.pretty.secondary a, .pretty .secondary.btn a, .pretty .secondary.skiplink a, .btn.pretty.secondary input, .pretty .secondary.btn input, .pretty .secondary.skiplink input, .btn.pretty.secondary button, .pretty .secondary.btn button, .pretty .secondary.skiplink button, .skiplink.pretty.secondary a, .skiplink.pretty.secondary input, .skiplink.pretty.secondary button { text-shadow: 0 1px 1px #255a32; }
+.btn.pretty.secondary:active, .pretty .secondary.btn:active, .pretty .secondary.skiplink:active, .skiplink.pretty.secondary:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffcc00), color-stop(100%, #ffe066)); background-image: -webkit-linear-gradient(#ffcc00, #ffe066); background-image: -moz-linear-gradient(#ffcc00, #ffe066); background-image: -o-linear-gradient(#ffcc00, #ffe066); background-image: linear-gradient(#ffcc00, #ffe066); -webkit-box-shadow: inset 0 0 3px white; -moz-box-shadow: inset 0 0 3px white; box-shadow: inset 0 0 3px white; }
+.btn.pretty.secondary a, .pretty .secondary.btn a, .pretty .secondary.skiplink a, .btn.pretty.secondary input, .pretty .secondary.btn input, .pretty .secondary.skiplink input, .btn.pretty.secondary button, .pretty .secondary.btn button, .pretty .secondary.skiplink button, .skiplink.pretty.secondary a, .skiplink.pretty.secondary input, .skiplink.pretty.secondary button { text-shadow: 0 1px 1px #997a00; }
 .btn.pretty.default, .pretty .default.btn, .pretty .default.skiplink, .skiplink.pretty.default { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f3f1f1)); background-image: -webkit-linear-gradient(#ffffff, #f3f1f1); background-image: -moz-linear-gradient(#ffffff, #f3f1f1); background-image: -o-linear-gradient(#ffffff, #f3f1f1); background-image: linear-gradient(#ffffff, #f3f1f1); -webkit-box-shadow: inset 0 0 3px white; -moz-box-shadow: inset 0 0 3px white; box-shadow: inset 0 0 3px white; border: 1px solid #cccccc; }
 .btn.pretty.default:hover, .pretty .default.btn:hover, .pretty .default.skiplink:hover, .skiplink.pretty.default:hover { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(#ffffff, #ffffff); background-image: -moz-linear-gradient(#ffffff, #ffffff); background-image: -o-linear-gradient(#ffffff, #ffffff); background-image: linear-gradient(#ffffff, #ffffff); -webkit-box-shadow: inset 0 0 3px white; -moz-box-shadow: inset 0 0 3px white; box-shadow: inset 0 0 3px white; border: 1px solid #d9d9d9; }
 .btn.pretty.default:active, .pretty .default.btn:active, .pretty .default.skiplink:active, .skiplink.pretty.default:active { background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f3f1f1), color-stop(100%, #ffffff)); background-image: -webkit-linear-gradient(#f3f1f1, #ffffff); background-image: -moz-linear-gradient(#f3f1f1, #ffffff); background-image: -o-linear-gradient(#f3f1f1, #ffffff); background-image: linear-gradient(#f3f1f1, #ffffff); -webkit-box-shadow: inset 0 0 3px white; -moz-box-shadow: inset 0 0 3px white; box-shadow: inset 0 0 3px white; }
@@ -1442,8 +1444,8 @@ form fieldset legend { padding: 5px 10px; }
 .field { position: relative; max-width: 100%; margin-bottom: 10px; vertical-align: middle; font-size: 16px; overflow: hidden; }
 .field.metro, .field .metro { -webkit-border-radius: 0; -moz-border-radius: 0; -ms-border-radius: 0; -o-border-radius: 0; border-radius: 0; }
 .field input, .field input[type="*"], .field textarea { max-width: 100%; width: 100%; padding: 0; margin: 0; border: none; outline: none; resize: none; -webkit-appearance: none; font-family: "Lato"; font-weight: 300; font-size: 16px; font-size: 1rem; -webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none; }
-.field .input { position: relative; padding: 0 10px; background: #fff; border: 1px solid #d8d8d8; height: 36px; line-height: 34px; font-size: 16px; font-size: 1rem; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
-.field .input.search { height: 36px; line-height: 34px; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; padding-right: 0; }
+.field .input { position: relative; padding: 0 10px; background: #fff; border: 1px solid #d8d8d8; height: 20px; line-height: 18px; font-size: 16px; font-size: 1rem; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.field .input.search { height: 20px; line-height: 18px; -webkit-border-radius: 1000px; -moz-border-radius: 1000px; -ms-border-radius: 1000px; -o-border-radius: 1000px; border-radius: 1000px; padding-right: 0; }
 .field .input.textarea { height: auto; }
 
 input.xnarrow, .input.xnarrow { width: 13.33333%; margin: 0; }
@@ -1491,7 +1493,7 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 
 .prepend .btn a, .prepend .btn input, .prepend .btn button, .append .btn a, .append .btn input, .append .btn button { padding: 0 12px; }
 
-.prepend .adjoined, .append .adjoined { padding: 0 10px 0 10px; background: #f2f2f2; border: 1px solid #d8d8d8; font-family: "Lato"; font-weight: 600; color: #472f92; font-size: 16px; font-size: 1rem; height: 36px; line-height: 34px; }
+.prepend .adjoined, .append .adjoined { padding: 0 10px 0 10px; background: #f2f2f2; border: 1px solid #d8d8d8; font-family: "Lato"; font-weight: 600; color: #472f92; font-size: 16px; font-size: 1rem; height: 20px; line-height: 18px; }
 
 .prepend .adjoined, .prepend .btn { margin-right: -1px; }
 
@@ -1558,11 +1560,16 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 .picker select { position: relative; display: block; min-width: 100%; width: 135%; height: 34px; padding: 6px 45px 6px 15px; color: #472f92; border: none; background: transparent; outline: none; -webkit-appearance: none; z-index: 99; cursor: pointer; font-size: 16px; font-size: 1rem; }
 .picker select::-ms-expand { display: none; }
 
+/* Form Multi-picker Element (<select> multiple) */
+.multi-picker { position: relative; width: auto; display: inline-block; margin: 0 0 2px 1.2%; overflow: hidden; border: 1px solid #e5e5e5; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; font-family: "Lato"; font-weight: 600; height: auto; }
+.multi-picker:first-child { margin-left: 0; }
+.multi-picker select[multiple] { position: relative; display: block; min-width: 100%; width: 100%; height: auto; padding: 6px 20px 6px 15px; color: #472f92; border: none; background: #fff; outline: none; -webkit-appearance: none; z-index: 99; cursor: pointer; font-size: 16px; font-size: 1rem; }
+
 /* Labels */
 .badge, .label { height: 20px; display: inline-block; font-family: Helvetica, arial, verdana, sans-serif; font-weight: bold; line-height: 20px; text-align: center; color: #fff; }
 .badge a, .label a { color: #fff; }
-.badge.primary, .label.primary { background: #472f92; border: 1px solid #472f92; }
-.badge.secondary, .label.secondary { background: #42a35a; border: 1px solid #42a35a; }
+.badge.primary, .label.primary { background: #00558b; border: 1px solid #00558b; }
+.badge.secondary, .label.secondary { background: #ffcc00; border: 1px solid #ffcc00; }
 .badge.default, .label.default { background: #f2f2f2; border: 1px solid #f2f2f2; color: #555555; }
 .badge.default:hover, .label.default:hover { border-color: #e5e5e5; }
 .badge.default a, .label.default a { color: #555555; }
@@ -1580,8 +1587,8 @@ label + .xnarrow:last-child, label + .narrow:last-child, label + .normal:last-ch
 .label { padding: 0 10px; font-size: 12px; font-size: 0.75rem; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
 
 .alert { padding: 0 10px; font-family: "Lato"; font-weight: 600; list-style-type: none; word-wrap: break-word; margin-bottom: 8px; font-size: 14px; font-size: 0.875rem; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
-.alert.primary { background: #775ccb; border: 1px solid #472f92; color: #211645; }
-.alert.secondary { background: #80cb92; border: 1px solid #42a35a; color: #255a32; }
+.alert.primary { background: #0093f1; border: 1px solid #00558b; color: #001725; }
+.alert.secondary { background: #ffe066; border: 1px solid #ffcc00; color: #997a00; }
 .alert.default { background: white; border: 1px solid #f2f2f2; color: #bfbfbf; color: #555555; border: 1px solid #f2f2f2; }
 .alert.info { background: #7b8085; border: 1px solid #4a4d50; color: #191a1b; color: #f2f2f2; }
 .alert.danger { background: #df8989; border: 1px solid #ca3838; color: #7b2121; }
@@ -1656,7 +1663,7 @@ table caption { text-align: center; font-size: 30px; padding: .75em; }
 table thead th, table tbody td, table tr td { display: table-cell; padding: 10px; vertical-align: top; text-align: left; border-top: 1px solid #e5e5e5; }
 table tr td, table tbody tr td { font-size: 16px; }
 table tr td:first-child { font-weight: bold; }
-table thead { background-color: #472f92; color: #fff; }
+table thead { background-color: #00558b; color: #fff; }
 table thead tr th { font-size: 16px; font-weight: bold; vertical-align: bottom; }
 table.striped tr:nth-of-type(even), table table tr.stripe, table table tr.striped { background-color: #e5e5e5; }
 table.rounded { border-radius: 4px; border-collapse: separate; }
@@ -1668,8 +1675,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 /* Tooltips */
 .ttip { position: relative; cursor: pointer; }
-.ttip:after { display: block; background: #472f92; border: 1px solid #472f92; border-bottom: 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; padding: 0.5em 0.75em; width: auto; min-width: 130px; max-width: 500px; position: absolute; left: 0; bottom: 101%; margin-bottom: 8px; text-align: left; color: #fff; content: attr(data-tooltip); line-height: 1.5; font-size: 16px; font-weight: normal; font-style: normal; -webkit-transition: opacity 0.1s ease; -moz-transition: opacity 0.1s ease; -o-transition: opacity 0.1s ease; transition: opacity 0.1s ease; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; pointer-events: none; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5f3fc1), color-stop(100%, #472f92)); background-image: -webkit-linear-gradient(top, #5f3fc1, #472f92); background-image: -moz-linear-gradient(top, #5f3fc1, #472f92); background-image: -o-linear-gradient(top, #5f3fc1, #472f92); background-image: linear-gradient(top, #5f3fc1, #472f92); -webkit-box-shadow: 0 0 5px 0 rgba(71, 47, 146, 0.25); -moz-box-shadow: 0 0 5px 0 rgba(71, 47, 146, 0.25); box-shadow: 0 0 5px 0 rgba(71, 47, 146, 0.25); }
-.ttip:before { content: " "; width: 0; height: 0; position: absolute; bottom: 101%; left: 8px; border-top: 9px solid #472f92 !important; border-left: 9px solid transparent; border-right: 9px solid transparent; -webkit-transition: opacity 0.1s ease; -moz-transition: opacity 0.1s ease; -o-transition: opacity 0.1s ease; transition: opacity 0.1s ease; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; pointer-events: none; }
+.ttip:after { display: block; background: #00558b; border: 1px solid #00558b; border-bottom: 0; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; padding: 0.5em 0.75em; width: auto; min-width: 130px; max-width: 500px; position: absolute; left: 0; bottom: 101%; margin-bottom: 8px; text-align: left; color: #fff; content: attr(data-tooltip); line-height: 1.5; font-size: 16px; font-weight: normal; font-style: normal; -webkit-transition: opacity 0.1s ease; -moz-transition: opacity 0.1s ease; -o-transition: opacity 0.1s ease; transition: opacity 0.1s ease; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; pointer-events: none; background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #007ccb), color-stop(100%, #00558b)); background-image: -webkit-linear-gradient(top, #007ccb, #00558b); background-image: -moz-linear-gradient(top, #007ccb, #00558b); background-image: -o-linear-gradient(top, #007ccb, #00558b); background-image: linear-gradient(top, #007ccb, #00558b); -webkit-box-shadow: 0 0 5px 0 rgba(0, 85, 139, 0.25); -moz-box-shadow: 0 0 5px 0 rgba(0, 85, 139, 0.25); box-shadow: 0 0 5px 0 rgba(0, 85, 139, 0.25); }
+.ttip:before { content: " "; width: 0; height: 0; position: absolute; bottom: 101%; left: 8px; border-top: 9px solid #00558b !important; border-left: 9px solid transparent; border-right: 9px solid transparent; -webkit-transition: opacity 0.1s ease; -moz-transition: opacity 0.1s ease; -o-transition: opacity 0.1s ease; transition: opacity 0.1s ease; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0); opacity: 0; pointer-events: none; }
 .ttip:hover:after, .ttip:hover:before { -webkit-transition: opacity 0.1s ease; -moz-transition: opacity 0.1s ease; -o-transition: opacity 0.1s ease; transition: opacity 0.1s ease; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100); opacity: 1; }
 
 @media only screen and (max-width: 768px) { .ttip:after, .ttip:before { display: none; } }
@@ -2497,7 +2504,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .landing-push-down { height: 200px; }
 
-body { font-family: 'Lato', serif; color: #472f92; }
+body { font-family: 'Lato', serif; color: #00558b; }
 
 h1, h2, h3 { font-family: 'Alex Brush', serif; }
 
@@ -2525,6 +2532,13 @@ a { -webkit-transition-property: color; -moz-transition-property: color; -o-tran
 @media only screen and (tablet) { .hide-tablet { display: none !important; } }
 
 .navbar ul > li > a { font-size: 1.2em; -webkit-transition-property: background-color; -moz-transition-property: background-color; -o-transition-property: background-color; transition-property: background-color; -webkit-transition-duration: 1s; -moz-transition-duration: 1s; -o-transition-duration: 1s; transition-duration: 1s; -webkit-transition-timing-function: ease-in-out; -moz-transition-timing-function: ease-in-out; -o-transition-timing-function: ease-in-out; transition-timing-function: ease-in-out; }
+
+.landing-body { background-image: url("/img/carlayjavierwelcome.jpg"); background-color: #00558b; background-blend-mode: luminosity; background-size: 100% auto; background-position-y: -220px; }
+
+.announce, .welcome, .enter a { color: white; text-shadow: #ffcc00 2px 2px 8px; }
+
+.enter a { -webkit-transition: all 2s ease; -webkit-transition-delay: 0s; -moz-transition: all 2s ease 0s; -o-transition: all 2s ease 0s; transition: all 2s ease 0s; }
+.enter a:hover { color: white; text-shadow: #00558b 2px 2px 8px; }
 
 .announce { min-height: 1.5em; font-size: 1.5em; }
 

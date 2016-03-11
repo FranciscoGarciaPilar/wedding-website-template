@@ -1,7 +1,6 @@
 /**
  * Require Config is setup and the define to launch the main app is set.
  */
-
 require.config({
     paths: {
         domReady: site.url.bower + '/requirejs-domready/domReady',
